@@ -1,0 +1,27 @@
+# Most common memory issues in Spark applications
+
+# Out of Memory Error, Java Heap Space
+
+      WARN TaskSetManager: Loss was due to 
+      java.lang.OutOfMemoryError
+      java.lang.OutOfMemoryError: Java heap space
+      Out of Memory Error, Exceeding Physical Memory
+
+# Error: ExecutorLostFailure Reason: Container killed by YARN for exceeding limits.
+      12.4 GB of 12.3 GB physical memory used. 
+      Consider boosting spark.yarn.executor.memoryOverhead.
+      Error: ExecutorLostFailure Reason: Container killed by YARN for exceeding limits.
+      4.5GB of 3GB physical memory used limits.
+      Consider boosting spark.yarn.executor.memoryOverhead.
+      Out of Memory Error, Exceeding Virtual Memory
+
+# Container killed by YARN for exceeding memory limits.
+      1.1gb of 1.0gb virtual memory used. Killing container.
+      Out of Memory Error, Exceeding Executor Memory
+
+# Required executor memory (1024+384 MB) is above 
+      the max threshold (896 MB) of this cluster! Please check the values of 'yarn.scheduler.maximum-allocation-mb'
+      and/or 'yarn.nodemanager.resource.memory-mb
+      
+
+
